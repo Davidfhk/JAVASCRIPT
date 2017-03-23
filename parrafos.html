@@ -1,0 +1,40 @@
+<!-- Manejo del DOM
+
+
+Parte 1
+Obtener la lista de elementos de etiqueta <p> y mostrarlos en un
+alert de JavaScript.
+Caso práctico
+
+Parte 2
+Añadir un nuevo elemento <p> con el texto “Texto del nuevo párrafo”
+y que sea hijo del body. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p>Parrafo 1</p>
+	<p>Parrafo 2</p>
+	<p>Parrafo 3</p>
+	<p>Parrafo 4</p>
+	<p>Parrafo 5</p>
+
+	<script type="text/javascript">
+		var parrafos = document.getElementsByTagName("p");
+		for ( i=0; i<parrafos.length; i++){
+			alert(parrafos[i].innerHTML)
+		}
+		do{
+		var new_texto = prompt("Introduzca el nuevo parrafo");
+		var new_parrafo = document.createElement("p");
+		new_parrafo.innerHTML = (new_texto)
+		document.body.appendChild(new_parrafo)
+		} while (new_texto != (""))
+
+	</script>
+</body>
+</html>

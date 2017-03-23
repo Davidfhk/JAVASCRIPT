@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Palíndromo</title>
+	<script type="text/javascript">
+		function leer (textos){
+			var texto_separado = textos.split("");
+			var cont = 0
+			var long = texto_separado.length
+			for(var i=0;i<texto_separado.length;i++){
+				long = long -1
+				letra_izq = texto_separado[i];
+				letra_der = texto_separado[long];
+				if (letra_izq == letra_der){
+					cont=cont+1;
+				}else{
+					palindromo = false
+					return alert("esta palabra no es un palíndromo");
+				}
+				if (cont == (texto_separado.length)){
+					palindromo = true
+					return alert("esta palabra es un palíndromo FELICIDADES!!");
+				}
+			}
+		}
+		do{
+			palabra = prompt ("Escriba una palabra");
+			leer (palabra);
+		}while (palindromo !== true);
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
