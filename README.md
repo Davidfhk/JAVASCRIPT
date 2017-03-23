@@ -1,5 +1,5 @@
 # JAVASCRIPT
-Ejercicios con js
+Ejercicios con js, dentro de HTML5 
 
 parrafos:
 
